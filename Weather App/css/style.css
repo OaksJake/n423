@@ -1,0 +1,131 @@
+html, body {
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(to top right, rgba(255,255,0, 0.5), rgba(255,0,0,1));
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+}
+
+#other h3{
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 1200px;
+    padding: 10px 10px 10px 10px;
+}
+
+#lowHigh h3{
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+nav {
+    height: 100px;
+    text-shadow: 1px 1px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a p {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#image {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 150px;
+}
+
+#image img {
+    width: 100px;
+}
+
+#logo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
+#submit {
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
+#location {
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+}
