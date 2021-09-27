@@ -1,0 +1,21 @@
+.form {
+    padding: 30px;
+}
+
+.general {
+    display: block;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#contentid {
+    color: white;
+    background-color: black;
+}
+
+#contentid:nth-child(even){
+    color: black;
+    background-color: white;
+}
