@@ -8,7 +8,7 @@ function addEventListner() {
 }
 
 function getWeather(cityZip) {
-    $.get(`http://api.weatherapi.com/v1/current.json?key=e2164d2ea6e04c93896202934211309&q=${cityZip}&aqi=no`, function (data) {
+    $.get(`https://api.weatherapi.com/v1/current.json?key=e2164d2ea6e04c93896202934211309&q=${cityZip}&aqi=no`, function (data) {
         console.log(data);
         $("#name").html(`<h1>${data.location.name}</h1>`);
         $("#image").html(`<img src="${data.current.condition.icon}" />`);
