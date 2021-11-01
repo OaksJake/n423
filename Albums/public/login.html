@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auth</title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a href="login.html"><p>Login</p></a>
+        <a href="signup.html"><p><b>Sign-Up</b></p></a>
+    </nav>
+    <hr>
+    <h1>Login</h1>
+    <hr>
+
+    <div class="text">
+      <h4>Login | </h4>
+      <label for="loginEmail">E-Mail:</label>
+      <input id="loginEmail" type="email" />
+      <label for="loginPassword">Password:</label>
+      <input id="loginPassword" type="password" minlength="8"/>
+    </div>
+    <div class="text">
+        <button style="width: 150px; height: 50px" id="login" onClick="login()">Login</button>
+      </div>
+    <div class="text">
+      <button style="width: 150px; height: 50px" onClick="signOut()">Sign Out</button>
+    </div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.3/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.3/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
