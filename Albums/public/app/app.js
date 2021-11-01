@@ -11,7 +11,7 @@ function initListeners() {
             .get()
             .then(function (querySnapshot) {
               querySnapshot.forEach(function (doc) {
-                $("#row1").append(`<div id="logo"><img style="width: 300px; height: 300px" src="${doc.data().photo}" /></div><div id="logo">Album Name: ${doc.data().name} | Artist: ${doc.data().artist} | Genre: ${doc.data().genre}</div>`);
+                $("#row1").append(`<div id="logo"><img style="width: 300px; height: 300px" src="${doc.data().photo}" /></div><div id="logo">Album Name: ${doc.data().name} | Artist: ${doc.data().artist} | Genre: ${doc.data().genre}</div><hr>`);
               });
             });
           // ...
@@ -24,7 +24,7 @@ function initListeners() {
             .then(function (querySnapshot) {
               querySnapshot.forEach(function (doc) {
                   if(doc.data().free == true) {
-                    $("#row1").append(`<div id="logo"><img style="width: 300px; height: 300px" src="${doc.data().photo}" /></div><div id="logo">Album Name: ${doc.data().name} | Artist: ${doc.data().artist} | Genre: ${doc.data().genre}</div>`);
+                    $("#row1").append(`<div id="logo"><img style="width: 300px; height: 300px" src="${doc.data().photo}" /></div><div id="logo">Album Name: ${doc.data().name} | Artist: ${doc.data().artist} | Genre: ${doc.data().genre}</div><hr>`);
                   }
                 });
             });
@@ -85,6 +85,37 @@ function create() {
         // ..
         console.log(errorMessage);
     });
+}
+
+function signinWithProvider(provider) {
+  firebase
+  .auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+      /** @type {firebase.auth.OAuthCredential} */
+      var credential = result.credential;
+
+      // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+      var token = credential.accessToken;
+
+      // The signed-in user info.
+      var user = result.user;
+      // ...
+  }).catch((error) => {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
+});
+}
+
+function signinGoogle(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  signinWithProvider(provider);
 }
 
 function initFirebase() {
