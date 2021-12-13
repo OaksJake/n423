@@ -1,0 +1,235 @@
+html, body {
+    height: 900px;
+    width: 100%;
+    background-color: #111;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+.pageHead {
+    color: white;
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+p {
+    color: white;
+}
+
+nav {
+    background-color: #222;
+    font-size: 28px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 5px; right: 5px; bottom: 5px; left: 5px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: #DDD;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.gamesSearchButton {
+    color: #DDD;
+    font-size: 28px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+.gamesSearchButton :hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 750px;
+}
+
+.search input {
+    color: black;
+    border-radius: 25px;
+    background-color: #DDD;
+    font-size: 26px;
+    width: 225px;
+    padding: 5px 5px 5px 5px;
+}
+
+.HomeTable{
+    background-image: linear-gradient(144deg,#e940ff, #42edf3);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+    margin: 0px 200px 50px 200px;
+}
+
+.HomeTable table {
+    background-color: #222;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%; 
+    border: 1px solid #fff;
+}
+
+.HomeTable th {
+    font-size: 36px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.HomeTable td {
+    font-size: 26px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.gamesTable{
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(144deg,#e940ff, #42edf3);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+    margin: 0px 200px 50px 200px;
+}
+
+.gameTableName {
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #222;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gamesTable table {
+    background-color: #222;
+    table-layout: fixed;
+    width: 100%;
+    padding: 25px 25px 25px 25px;
+}
+
+.gamesTable th,.gamesTable td {
+    text-align: center;
+    padding: 10px;
+}
+
+.gamePage {
+    width: 200px;
+    float: left;
+}
+
+.gameName {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0px 300px 50px 200px;
+    width: 300px;
+}
+
+.gamePage img {
+    margin: 50px 300px 50px 200px;
+    width: 300px;
+}
+
+.rankTable table{
+    color: white;
+    background-image: linear-gradient(144deg,#e940ff, #42edf3);
+    float: right;
+    width: 55%;
+    border-radius: 10px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+    margin: 75px 200px 50px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.rankTable th {
+    font-size: 36px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.rankTable tr, .rankTable td {
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #222;
+    padding: 10px;
+    width: 500px;
+}
+
+.login{
+    color: white;
+    border-radius: 10px;
+    background-color: #222;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+    margin: 0px 500px 20px 500px;
+}
+
+input {
+    font-size: 26px;
+}
+
+.login-buttons {
+  background-image: linear-gradient(144deg,#e940ff, #42edf3);
+  color: #FFFFFF;
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  width: 500px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.login-buttons a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .gamesButton {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }

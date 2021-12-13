@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speedruns.com</title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body> 
+  <nav id="navbar">
+    <a class="logo" href="index.html"><img src="img/SpeedrunLogo.png" alt="Speedrnus.com Logo"></a>
+    <p>|</p>
+    <button class="gamesSearchButton" onClick="gameSearch('')">Games</button>
+    <p>|</p>
+    <div class="search">
+        <input id="searchInput" type="text" placeholder="Search for a game!">
+      </div>
+    <p>|</p>
+</nav>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="pageHead"></h2>
+    <div class="login">
+      <div>
+        <div>
+          <h2>
+            Submit Run
+          </h2>
+        </div>
+        <hr>
+        <br>
+        <div id="runSubmitData">
+        </div>
+        <div>
+          <label for="timeSubmit">Time: </label>
+          <input id="timeSubmit" type="text" minlength="9" placeholder="hh:mm:ss"/>
+        </div>
+        <br>
+        <br>
+        <div>
+          <button class="login-buttons" id="runSubmit" onClick="runSubmit()">Submit for Review</button>
+        </div>
+        <br>
+        <hr>
+      </div>
+    </div>
+    <br>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.3/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.3/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

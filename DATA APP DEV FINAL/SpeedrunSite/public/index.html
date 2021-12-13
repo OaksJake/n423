@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Speedruns.com</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="logo" href="index.html"><img src="img/SpeedrunLogo.png" alt="Speedrnus.com Logo"></a>
+        <p>|</p>
+        <button class="gamesSearchButton" onClick="gameSearch('')">Games</button>
+        <p>|</p>
+        <div class="search">
+          <input id="searchInput" type="text" placeholder="Search for a game!">
+        </div>
+        <p>|</p>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="pageHead">Recent Runs</h2>
+    <div class="padded">
+        <div class="HomeTable">
+            <table id="hometable">
+                <tr>
+                    <th>User</th>
+                    <th>Game</th>
+                    <th>Rank</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.3/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.3/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
